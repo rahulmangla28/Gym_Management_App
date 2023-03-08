@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarRenewDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:titleTextColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/imgDialogRenewBack"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:background="@color/black"
+                android:src="@drawable/back_arrow"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Membership Renewal"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:gravity="center"
+                android:layout_toEndOf="@id/imgDialogRenewBack"
+                android:layout_marginStart="15dp"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtDialogJoining"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Date of Joining"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:enabled="false"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_calendar"
+                android:id="@+id/imgDialogPicDate"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Membership"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_weight="0.7"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:id="@+id/spDialogMembership"
+                android:entries="@array/membership"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:backgroundTint="#65a8d7"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expire On : "
+                android:textSize="16sp"
+                android:layout_weight="0.7"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/edtDialogExpire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:inputType="date"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discount(%) : "
+                android:textSize="16sp"
+                android:layout_weight="0.7"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/edtDialogDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:inputType="numberDecimal"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="end"
+                android:text="0.00"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Amount : "
+                android:textSize="16sp"
+                android:layout_weight="0.7"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/edtDialogAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:inputType="numberDecimal"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:gravity="end"
+                android:hint="0.00"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDialogRenewSave"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Save Details"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>
