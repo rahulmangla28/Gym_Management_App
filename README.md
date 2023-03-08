@@ -9,13 +9,13 @@ _**You can install preview application from here**_
 
 ## 📜 Contents
 
-* [Android Concepts Used]()
-* [Screenshots]()
-* [Languages Used]()
-* [App Permissions]()
-* [UI]()
-* [Coding Style]()
-* [Future Enhancements]()
+* [Android Concepts Used](https://github.com/rahulmangla28/Gym_Management_App#-android-concepts-used)
+* [Screenshots](https://github.com/rahulmangla28/Gym_Management_App#-screenshots)
+* [Languages Used](https://github.com/rahulmangla28/Gym_Management_App#-languages-used)
+* [App Permissions](https://github.com/rahulmangla28/Gym_Management_App#-app-permissions)
+* [UI](https://github.com/rahulmangla28/Gym_Management_App#-ui)
+* [Coding Style](https://github.com/rahulmangla28/Gym_Management_App#-coding-style)
+* [Future Enhancements](https://github.com/rahulmangla28/Gym_Management_App#-future-enhancements)
 
 ## 📑 Android Concepts Used
 
