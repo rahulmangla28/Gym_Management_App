@@ -29,11 +29,11 @@ It stores the data in the local database and displays it.
 
 Splash Screen | Login Page | Add New Member | 
 --- | --- | --- |
-<img src="" height="400" width="300" > | <img src="" height="400" width="300" > | <img src="" height="400" width="300" >
+<img src="https://github.com/rahulmangla28/Gym_Management_App/blob/master/SplashScreen.jpeg" height="350" width="200" > | <img src="https://github.com/rahulmangla28/Gym_Management_App/blob/master/Login%20Page.jpeg" height="350" width="200" > | <img src="https://github.com/rahulmangla28/Gym_Management_App/blob/master/Add%20New%20Member.jpeg" height="350" width="200" >
 
 Update Membership Fee | Change Password 
 --- | --- |
-<img src="" height="400" width="300" > | <img src="" height="400" width="300" > 
+<img src="https://github.com/rahulmangla28/Gym_Management_App/blob/master/Update%20Membership%20Fee.jpeg" height="350" width="200" > | <img src="https://github.com/rahulmangla28/Gym_Management_App/blob/master/Change%20Password.jpeg" height="350" width="200" > 
 
 ## 🔤 Languages Used
 
