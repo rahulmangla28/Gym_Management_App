@@ -67,6 +67,7 @@ class FragmentAddMember : Fragment() {
 
         ID = arguments?.getString("ID").toString()
 
+        // set joining date
         val cal = Calendar.getInstance()
         val dateSetListener = DatePickerDialog.OnDateSetListener {view1 , year, monthOfYear , dayOfMonth ->
 
@@ -106,7 +107,7 @@ class FragmentAddMember : Fragment() {
                             calculateTotal(binding.spMembership,binding.edtDiscount,binding.edtAmount)
                         }
 
-                    }else {
+                    }else if(binding.edtJoining.text.toString().trim().isEmpty()) {
                         showToast("Select Joining date first")
                         binding.spMembership.setSelection(0)
                     }
@@ -119,18 +120,13 @@ class FragmentAddMember : Fragment() {
         }
 
         binding.edtDiscount.addTextChangedListener(object : TextWatcher{
-            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-            }
-
-            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-            }
-
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
             override fun afterTextChanged(p0: Editable?) {
                 if(p0!=null) {
                     calculateTotal(binding.spMembership,binding.edtDiscount,binding.edtAmount)
                 }
             }
-
         })
 
         binding.radioGroup.setOnCheckedChangeListener { radioGroup, id ->

@@ -2,6 +2,8 @@ package com.genius_koder.gymmanager.activity
 
 import android.app.Dialog
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -33,6 +35,8 @@ class LoginActivity : AppCompatActivity() {
         // inflating layout through view binding
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar!!.setBackgroundDrawable(ColorDrawable(Color.parseColor("#000000")))
 
         db = DB(this)
         session = SessionManager(this)

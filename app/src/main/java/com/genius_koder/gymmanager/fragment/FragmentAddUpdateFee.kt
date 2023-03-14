@@ -25,7 +25,7 @@ class FragmentAddUpdateFee : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        activity?.title = "Fee Pending"
+        activity?.title = "Update Fee"
         db = activity?.let { DB(it) }
 
         binding.btnAddMembership.setOnClickListener {
@@ -52,7 +52,7 @@ class FragmentAddUpdateFee : Fragment() {
         }else if(binding.edtOneYear.text.toString().trim().isEmpty()) {
             showToast("Enter One Year Fee")
             return false
-        }else {
+        }else if(binding.edtThreeYear.text.toString().trim().isEmpty()) {
             showToast("Enter Three Years Fee")
             return false
         }
@@ -70,7 +70,7 @@ class FragmentAddUpdateFee : Fragment() {
                     "'"+binding.edtThreeYear.text.toString().trim()+"')"
 
             db?.executeQuery(sqlQuery)
-            showToast("Membership data saved successfully")
+            showToast("Membership Fee data saved successfully")
 
         }catch (e:Exception) {
             e.printStackTrace()
