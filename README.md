@@ -3,10 +3,6 @@
 An Android 📱application which displays the various details about the members of the :weight_lifting: gym.
 It stores the data in the local database and displays it.
 
-_**You can install preview application from here**_
-
-[![Weather App]()]()
-
 ## 📜 Contents
 
 * [Android Concepts Used](https://github.com/rahulmangla28/Gym_Management_App#-android-concepts-used)
@@ -31,13 +27,13 @@ _**You can install preview application from here**_
 
 ## 📸 Screenshots
 
-Splash Screen | Login Page | Add Member | 
+Splash Screen | Login Page | Add New Member | 
 --- | --- | --- |
 <img src="" height="400" width="300" > | <img src="" height="400" width="300" > | <img src="" height="400" width="300" >
 
-Update Membership Fee | Fee Pending List | All Members List 
---- | --- | --- |
-<img src="" height="400" width="300" > | <img src="" height="400" width="300" > | <img src="" height="400" width="300" >
+Update Membership Fee | Change Password 
+--- | --- |
+<img src="" height="400" width="300" > | <img src="" height="400" width="300" > 
 
 ## 🔤 Languages Used
 
